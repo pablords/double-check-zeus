@@ -1,0 +1,39 @@
+{
+  "name": "zeus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "apiVersion": "v1",
+  "scripts": {
+    "test": "NODE_ENV=TEST node ./build/src/index.js",
+    "prod": "NODE_ENV=PROD node ./build/src/index.js",
+    "dev": "ts-node-dev -r dotenv/config --watch --respawn --transpile-only --ignore-watch node_modules ./src/index.ts",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "date-fns": "^2.24.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "fs-extra": "^10.0.0",
+    "knex": "^0.95.11",
+    "mysql": "^2.18.1",
+    "pm2": "^5.1.2",
+    "puppeteer": "^10.2.0",
+    "shelljs": "^0.8.4",
+    "xlsx": "^0.17.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.9.2",
+    "@types/node-xlsx": "^0.15.2",
+    "@types/puppeteer": "^5.4.4",
+    "@types/shelljs": "^0.8.9",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.4.3"
+  }
+}
